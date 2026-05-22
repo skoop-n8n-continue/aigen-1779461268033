@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Coffee Shop Digital Kiosk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Hero Header -->
+        <header class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>The Daily Grind</h1>
+                <p>Tap any item to see ingredients</p>
+            </div>
+        </header>
+
+        <!-- Menu Section -->
+        <main class="menu-container" id="menu-container">
+            <!-- Menu items will be injected here by JS -->
+        </main>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+            <button class="close-btn" id="close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h2 id="modal-title">Item Name</h2>
+                <span class="modal-price" id="modal-price">$0.00</span>
+            </div>
+            <p class="modal-description" id="modal-description">Description goes here.</p>
+
+            <div class="ingredients-section">
+                <h3>Ingredients</h3>
+                <ul class="ingredients-list" id="ingredients-list">
+                    <!-- Ingredients injected here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
